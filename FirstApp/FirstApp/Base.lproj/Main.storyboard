@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra5-j5-b1H" userLabel="Movies Label">
+                                <rect key="frame" x="122" y="90" width="148" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="EHP-PP-4mZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="deadpoetssociety" translatesAutoresizingMaskIntoConstraints="NO" id="uC9-Hz-aZj">
+                                <rect key="frame" x="12" y="203" width="368" height="373"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCk-fY-BO0">
+                                <rect key="frame" x="67" y="630" width="259" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="TYh-No-kcV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Change the Movie">
+                                            <attributes>
+                                                <font key="NSFont" size="28" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="changeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hpw-7h-IYq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uC9-Hz-aZj" firstAttribute="top" secondItem="Ra5-j5-b1H" secondAttribute="bottom" constant="48" id="IRc-az-lqy"/>
+                            <constraint firstItem="FCk-fY-BO0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Nul-3U-q4X"/>
+                            <constraint firstItem="uC9-Hz-aZj" firstAttribute="centerX" secondItem="FCk-fY-BO0" secondAttribute="centerX" id="TMi-Ft-HU8"/>
+                            <constraint firstItem="Ra5-j5-b1H" firstAttribute="centerX" secondItem="uC9-Hz-aZj" secondAttribute="centerX" id="bqB-tw-oi4"/>
+                            <constraint firstItem="uC9-Hz-aZj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="c4S-tD-LXF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FCk-fY-BO0" secondAttribute="bottom" constant="141" id="cob-q2-Fyl"/>
+                            <constraint firstItem="Ra5-j5-b1H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="fOg-jg-wsY"/>
+                            <constraint firstItem="FCk-fY-BO0" firstAttribute="top" secondItem="uC9-Hz-aZj" secondAttribute="bottom" constant="54" id="lr9-e8-gBS"/>
+                            <constraint firstItem="Ra5-j5-b1H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pjn-Zf-SO3"/>
+                            <constraint firstItem="Ra5-j5-b1H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="vOB-Vb-VOS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="uC9-Hz-aZj" id="OKx-x0-mcj"/>
+                        <outlet property="moviesLabel" destination="Ra5-j5-b1H" id="nbR-cU-ofm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="deadpoetssociety" width="1280" height="1896"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
