@@ -39,3 +39,49 @@ print(numberArray[1])
 print(numberArray[2])
 print(numberArray[3])
 //1 2 4 5
+
+/*--------------------------------------------------------------------*/
+
+//Set
+//Set : Unordered collection and Unique elements
+
+var mySet : Set = [1,2,3,4,5,5,5]
+//Set'lerde indexing yoktur. Her eleman bir set'te BİR kez bulunur.
+
+print(mySet)
+
+var mySet2 : Set = [1,1,1,1,1,2,6,6,6,6]  //--> 1,2,6 elemanları mySet2 set'inde bulunur.
+print(mySet2)
+
+//int array --> set
+var intArr = [1,1,1,1,1,2,2,2,3,3,3,4]
+var setArr = Set(intArr)
+print(intArr)
+print(setArr)
+
+//Set'leri birleştirme
+var mySet3 = mySet.union(mySet2)
+print(mySet3)    //1,2,3,4,5,6 içerir
+
+/*--------------------------------------------------------------------*/
+
+//Dictionary (Java'daki 'HashMap' mantığı)
+//key-value pairing
+
+var Directors = ["Pulp Fiction" : "Tarantino", "Lock, Stock" : "Guy Ritchie", "The Dark Knight" : "Christopher Nolan"]
+
+Directors["Pulp Fiction"]        //"Tarantino"
+Directors["The Dark Knight"]     //"Christopher Nolan"
+Directors["Abc"]       //nil = In Swift, NULL and nil are equal to each other, but nil is an object value while NULL is a generic pointer value ((void*)0, to be specific)
+
+Directors["Pulp Fiction"] = "Quentin Tarantino"
+Directors["Pulp Fiction"]   //"Quentin Tarantino"
+
+print(Directors)
+
+Directors["Abc"] = "xyz"
+print(Directors)
+
+var myDict = ["Run" : 100, "Swim" : 200, "Basketball" : 300]
+print(myDict)
+print(myDict.count)  //3
