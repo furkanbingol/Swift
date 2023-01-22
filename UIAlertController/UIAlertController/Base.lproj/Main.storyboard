@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIAlertController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zOx-OM-IFV">
+                                <rect key="frame" x="49" y="361" width="294" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="uo5-oi-MyI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1M-KQ-vVn">
+                                <rect key="frame" x="49" y="418" width="294" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="F1N-p3-OKk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ppk-on-je1">
+                                <rect key="frame" x="49" y="476" width="294" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="7Qg-cb-NYB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2U-qp-wXS">
+                                <rect key="frame" x="135" y="555" width="123" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="RSM-g6-ZcG"/>
+                                </constraints>
+                                <color key="tintColor" red="0.11372549019607843" green="0.63137254901960782" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Up" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signupClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ty-0q-iAd"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterlogo" translatesAutoresizingMaskIntoConstraints="NO" id="IjA-MS-2md">
+                                <rect key="frame" x="30" y="88" width="333" height="245"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.63137254901960782" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zOx-OM-IFV" firstAttribute="trailing" secondItem="E1M-KQ-vVn" secondAttribute="trailing" id="2WY-pr-zvP"/>
+                            <constraint firstItem="Ppk-on-je1" firstAttribute="centerX" secondItem="O2U-qp-wXS" secondAttribute="centerX" id="5Uy-Iy-GhH"/>
+                            <constraint firstItem="Ppk-on-je1" firstAttribute="top" secondItem="E1M-KQ-vVn" secondAttribute="bottom" constant="24" id="Cl9-kn-nQi"/>
+                            <constraint firstItem="O2U-qp-wXS" firstAttribute="top" secondItem="Ppk-on-je1" secondAttribute="bottom" constant="45" id="DGS-kx-hzS"/>
+                            <constraint firstItem="zOx-OM-IFV" firstAttribute="leading" secondItem="E1M-KQ-vVn" secondAttribute="leading" id="FOh-5E-ONe"/>
+                            <constraint firstItem="E1M-KQ-vVn" firstAttribute="top" secondItem="zOx-OM-IFV" secondAttribute="bottom" constant="23" id="IOB-Qg-55g"/>
+                            <constraint firstItem="zOx-OM-IFV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QL6-iW-Vkb"/>
+                            <constraint firstItem="IjA-MS-2md" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="WWD-Ah-ltT"/>
+                            <constraint firstItem="O2U-qp-wXS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="ffq-G1-P7T"/>
+                            <constraint firstItem="IjA-MS-2md" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hQc-pD-YeJ"/>
+                            <constraint firstItem="zOx-OM-IFV" firstAttribute="top" secondItem="IjA-MS-2md" secondAttribute="bottom" constant="28" id="i5y-Xf-HNb"/>
+                            <constraint firstItem="IjA-MS-2md" firstAttribute="centerX" secondItem="zOx-OM-IFV" secondAttribute="centerX" id="iYD-tD-iJI"/>
+                            <constraint firstItem="E1M-KQ-vVn" firstAttribute="trailing" secondItem="Ppk-on-je1" secondAttribute="trailing" id="jhu-lR-7HE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O2U-qp-wXS" secondAttribute="bottom" constant="222" id="sj2-xq-tr8"/>
+                            <constraint firstItem="E1M-KQ-vVn" firstAttribute="leading" secondItem="Ppk-on-je1" secondAttribute="leading" id="utE-bX-n19"/>
+                            <constraint firstItem="zOx-OM-IFV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="wvn-9I-Po3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="password2Text" destination="Ppk-on-je1" id="8oD-xU-B8L"/>
+                        <outlet property="passwordText" destination="E1M-KQ-vVn" id="Fxe-Jc-yH4"/>
+                        <outlet property="usernameText" destination="zOx-OM-IFV" id="Qvq-Iy-bAt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="twitterlogo" width="1200" height="1200"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
