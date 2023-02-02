@@ -14,6 +14,7 @@
 		AC3F5B4D2987E586005510A5 /* P04_MapJournal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC3F5B4B2987E586005510A5 /* P04_MapJournal.xcdatamodeld */; };
 		AC3F5B4F2987E586005510A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3F5B4E2987E586005510A5 /* Assets.xcassets */; };
 		AC3F5B522987E586005510A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F5B502987E586005510A5 /* LaunchScreen.storyboard */; };
+		AC95BE5F298C019800735503 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95BE5E298C019800735503 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AC3F5B4E2987E586005510A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3F5B512987E586005510A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC3F5B532987E586005510A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC95BE5E298C019800735503 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				AC3F5B502987E586005510A5 /* LaunchScreen.storyboard */,
 				AC3F5B532987E586005510A5 /* Info.plist */,
 				AC3F5B4B2987E586005510A5 /* P04_MapJournal.xcdatamodeld */,
+				AC95BE5E298C019800735503 /* ListViewController.swift */,
 			);
 			path = "P04-MapJournal";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				AC3F5B472987E586005510A5 /* ViewController.swift in Sources */,
 				AC3F5B432987E586005510A5 /* AppDelegate.swift in Sources */,
 				AC3F5B452987E586005510A5 /* SceneDelegate.swift in Sources */,
+				AC95BE5F298C019800735503 /* ListViewController.swift in Sources */,
 				AC3F5B4D2987E586005510A5 /* P04_MapJournal.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
