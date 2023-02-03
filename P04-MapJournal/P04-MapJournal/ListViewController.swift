@@ -24,11 +24,22 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         
+        //Navigation Bar headerına Text, Font eklemek istersek
         navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonClick))
-        navigationController?.navigationBar.topItem?.rightBarButtonItem?.tintColor = UIColor(red: CGFloat(39)/255.0, green: CGFloat(60)/255.0, blue: CGFloat(117)/255.0, alpha: 1)
-
+        navigationController?.navigationBar.topItem?.rightBarButtonItem?.tintColor = UIColor.black
+        //navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font : UIFont(name: "Times new roman", size: 30)!,
+        //                                                           NSAttributedString.Key.foregroundColor : UIColor.black
+        //]
+        
+        
         getData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(getData), name: NSNotification.Name("new data"), object: nil)
+        //observer(gözlemci) ekledik
+    }
+    
     
     @objc func addButtonClick() {
         chosenTitle = ""
@@ -36,7 +47,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    func getData() {
+    @objc func getData() {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -75,7 +86,13 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         var content = cell.defaultContentConfiguration()
-        content.text = titleArray[indexPath.row]
+        
+        var attribute = [NSAttributedString.Key : Any]()
+        attribute[NSAttributedString.Key.foregroundColor] = UIColor.darkGray
+        attribute[NSAttributedString.Key.font] = UIFont(name: "avenir", size: 18)
+        let text = NSMutableAttributedString(string: titleArray[indexPath.row], attributes: attribute)
+        
+        content.attributedText = text
         cell.contentConfiguration = content
         return cell
     }

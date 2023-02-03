@@ -5,11 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--Map Journal-->
         <scene sceneID="HzB-BJ-GBF">
             <objects>
                 <viewController id="vkc-9O-Opn" customClass="ListViewController" customModule="P04_MapJournal" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,34 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PZD-0p-Wnw">
-                                <rect key="frame" x="0.0" y="150" width="393" height="668"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PZD-0p-Wnw">
+                                <rect key="frame" x="0.0" y="111" width="393" height="741"/>
+                                <color key="separatorColor" red="0.82745098039215681" green="0.83529411764705885" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexColor" red="0.82745098039215681" green="0.83529411764705885" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Map Journal" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qoa-jy-dZc">
-                                <rect key="frame" x="93" y="71" width="206" height="64"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Address" translatesAutoresizingMaskIntoConstraints="NO" id="f8c-jY-I3a">
+                                <rect key="frame" x="16" y="53" width="49" height="47"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="Don-23-dXb"/>
+                                    <constraint firstAttribute="width" constant="49" id="tAM-DT-4U2"/>
                                 </constraints>
-                                <color key="textColor" red="0.4392156862745098" green="0.43529411764705883" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="40"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xDd-MS-eKa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.77171406521427288" green="0.74610338594824344" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="PZD-0p-Wnw" firstAttribute="leading" secondItem="xDd-MS-eKa" secondAttribute="leading" id="6PQ-LR-C2E"/>
-                            <constraint firstItem="Qoa-jy-dZc" firstAttribute="centerX" secondItem="PZD-0p-Wnw" secondAttribute="centerX" id="8Te-wi-Yfm"/>
-                            <constraint firstItem="Qoa-jy-dZc" firstAttribute="centerX" secondItem="lEg-lN-yPN" secondAttribute="centerX" id="BEV-vN-MTg"/>
-                            <constraint firstItem="Qoa-jy-dZc" firstAttribute="leading" secondItem="xDd-MS-eKa" secondAttribute="leading" constant="93" id="OpO-I1-zH7"/>
-                            <constraint firstItem="PZD-0p-Wnw" firstAttribute="top" secondItem="Qoa-jy-dZc" secondAttribute="bottom" constant="15" id="gCi-Z3-EwR"/>
-                            <constraint firstItem="PZD-0p-Wnw" firstAttribute="bottom" secondItem="xDd-MS-eKa" secondAttribute="bottom" id="iYG-bs-tGT"/>
-                            <constraint firstItem="Qoa-jy-dZc" firstAttribute="top" secondItem="lEg-lN-yPN" secondAttribute="topMargin" constant="-32" id="s4a-7C-6ZW"/>
+                            <constraint firstItem="PZD-0p-Wnw" firstAttribute="leading" secondItem="xDd-MS-eKa" secondAttribute="leading" id="9SG-1g-3ZX"/>
+                            <constraint firstItem="PZD-0p-Wnw" firstAttribute="top" secondItem="xDd-MS-eKa" secondAttribute="top" constant="8" id="ArY-K8-gDt"/>
+                            <constraint firstItem="PZD-0p-Wnw" firstAttribute="top" secondItem="f8c-jY-I3a" secondAttribute="bottom" constant="11" id="Gff-d3-Q43"/>
+                            <constraint firstItem="f8c-jY-I3a" firstAttribute="top" secondItem="lEg-lN-yPN" secondAttribute="topMargin" constant="-50" id="J36-27-aGc"/>
+                            <constraint firstItem="f8c-jY-I3a" firstAttribute="leading" secondItem="lEg-lN-yPN" secondAttribute="leadingMargin" id="MSU-2Y-TFt"/>
+                            <constraint firstItem="PZD-0p-Wnw" firstAttribute="centerX" secondItem="lEg-lN-yPN" secondAttribute="centerX" id="Zr3-Oa-0bG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="PZD-0p-Wnw" secondAttribute="bottom" constant="-34" id="egC-Oe-W0L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zW2-tq-p6D"/>
+                    <navigationItem key="navigationItem" title="Map Journal" id="zW2-tq-p6D"/>
                     <connections>
                         <outlet property="tableView" destination="PZD-0p-Wnw" id="wdU-cm-cQ7"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toViewController" id="HjR-E3-lpl"/>
@@ -86,7 +83,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Save" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="23"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.47058823529411764" green="0.8784313725490196" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="baseBackgroundColor" red="0.65934271129695299" green="0.75851953551448237" blue="0.92898344993591309" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgS-Kc-vu8"/>
@@ -94,7 +91,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.9171004447956973" green="0.92724326520399414" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="8y2-49-H17" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2TJ-Kz-jpg"/>
                             <constraint firstItem="FqM-kP-cIu" firstAttribute="top" secondItem="8y2-49-H17" secondAttribute="bottom" constant="16" id="BbZ-lE-KIb"/>
@@ -131,10 +128,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i24-6L-9nu">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="30"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vkc-9O-Opn" kind="relationship" relationship="rootViewController" id="XKO-g3-NSM"/>
+                        <segue destination="vkc-9O-Opn" kind="relationship" relationship="rootViewController" id="hrh-XX-Lsv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VvX-pP-qd3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -143,8 +144,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Address" width="50" height="50"/>
     </resources>
 </document>
