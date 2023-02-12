@@ -13,6 +13,7 @@
 		AC358BF8299655E100ED023A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC358BF6299655E100ED023A /* Main.storyboard */; };
 		AC358BFA299655E100ED023A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC358BF9299655E100ED023A /* Assets.xcassets */; };
 		AC358BFD299655E100ED023A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC358BFB299655E100ED023A /* LaunchScreen.storyboard */; };
+		ACD0F1242999019E001800BF /* ControlElementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0F1232999019E001800BF /* ControlElementsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AC358BF9299655E100ED023A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC358BFC299655E100ED023A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC358BFE299655E100ED023A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD0F1232999019E001800BF /* ControlElementsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlElementsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				AC358BF0299655E100ED023A /* AppDelegate.swift */,
 				AC358BF2299655E100ED023A /* SceneDelegate.swift */,
 				AC358BF4299655E100ED023A /* ViewController.swift */,
+				ACD0F1232999019E001800BF /* ControlElementsVC.swift */,
 				AC358BF6299655E100ED023A /* Main.storyboard */,
 				AC358BF9299655E100ED023A /* Assets.xcassets */,
 				AC358BFB299655E100ED023A /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC358BF5299655E100ED023A /* ViewController.swift in Sources */,
+				ACD0F1242999019E001800BF /* ControlElementsVC.swift in Sources */,
 				AC358BF1299655E100ED023A /* AppDelegate.swift in Sources */,
 				AC358BF3299655E100ED023A /* SceneDelegate.swift in Sources */,
 			);
