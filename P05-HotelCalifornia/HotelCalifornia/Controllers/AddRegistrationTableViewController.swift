@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddRegistrationTableViewController: UITableViewController {
+class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeTableViewControllerDelegate {
 
     // MARK: - UI Elements
     @IBOutlet weak var firstNameTextField: UITextField!
@@ -23,6 +23,11 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBOutlet weak var numberOfAdultsStepper: UIStepper!
     @IBOutlet weak var numberOfChildrenStepper: UIStepper!
     @IBOutlet weak var numberOfChildrenLabel: UILabel!
+    
+    @IBOutlet weak var wifiSwitch: UISwitch!
+    
+    @IBOutlet weak var roomTypeLabel: UILabel!
+    
     
     // MARK: - Properties
     let oneDay: Double = 24 * 60 * 60   //sn
@@ -43,6 +48,26 @@ class AddRegistrationTableViewController: UITableViewController {
         }
     }
     
+    var roomType: RoomType?   // Diğer sayfada seçilen roomType'ı, bu roomType'a atayacağız.
+    
+    var registration: Registration? {     // get-only
+        guard let roomType = roomType else { return nil }
+        
+        let firstName = firstNameTextField.text!
+        let lastName = lastNameTextField.text!
+        let email = emailTextField.text!
+        let checkInDate = checkInDatePicker.date
+        let checkOutDate = checkOutDatePicker.date
+        let numberOfAdults = Int(numberOfAdultsStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
+        let hasWifi = wifiSwitch.isOn
+
+        return Registration(firstName: firstName, lastName: lastName, emailAddress: email,
+                            checkInDate: checkInDate, checkOutDate: checkOutDate, numberOfAdults: numberOfAdults,
+                            numberOfChildren: numberOfChildren, roomType: roomType, wifi: hasWifi)
+    }
+    
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +79,7 @@ class AddRegistrationTableViewController: UITableViewController {
         checkInDatePicker.date = today             // seçili olan tarihi ayarlar.
         updateDateViews()
         updateNumberOfGuests()
+        updateRoomType()
     }
     
     
@@ -80,6 +106,31 @@ class AddRegistrationTableViewController: UITableViewController {
     func updateNumberOfGuests() {
         numberOfAdultsLabel.text = "\(Int(numberOfAdultsStepper.value))"
         numberOfChildrenLabel.text = "\(Int(numberOfChildrenStepper.value))"
+    }
+    
+    func updateRoomType() {
+        if let roomType = roomType {    // roomType seçildiyse
+            roomTypeLabel.text = roomType.name
+        } else {
+            roomTypeLabel.text = "Not Set"
+        }
+    }
+    
+    
+    // protocol stub
+    func didSelect(roomType: RoomType) {    // Diğer VC'de bu fonksiyon çalıştırıldığında, aslında bu VC'deki fonksiyon çalıştırılacak. --> "Delegate Design Pattern"
+        self.roomType = roomType
+        updateRoomType()
+    }
+    
+    
+    // Diğer segue'ye geçilmeden önce yapılacaklar
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSelectRoomType" {
+            let destVC = segue.destination as! SelectRoomTypeTableViewController
+            destVC.delegate = self    // Bu sayede, diğer VC'de didSelectRow yaptığımızda; çalışacak delegate'in didSelect() fonksiyonu, BU VC'deki didSelect() olacak.
+            destVC.selectedRoomType = roomType
+        }
     }
     
     
@@ -144,17 +195,6 @@ class AddRegistrationTableViewController: UITableViewController {
     
     // MARK: - Actions
     
-    @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
-        let firstName = firstNameTextField.text!
-        let lastName = lastNameTextField.text!
-        let email = emailTextField.text!
-        let checkInDate = checkInDatePicker.date
-        let checkOutDate = checkOutDatePicker.date
-        
-        print("Done tapped! fname: \(firstName) , lname: \(lastName) , email: \(email)")
-        print("CheckIn: \(checkInDate)")
-        print("CheckOut: \(checkOutDate)")
-    }
     
     // Tek bir @IBAction'a birden fazla UI-Element bağlayabiliriz.
     @IBAction func datePickerValueChanged(_ picker: UIDatePicker) {
@@ -162,8 +202,17 @@ class AddRegistrationTableViewController: UITableViewController {
     }
     
     // Tek bir @IBAction'a birden fazla UI-Element bağlayabiliriz.
-    @IBAction func stepperValueChanged(_ sender: Any) {
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
         updateNumberOfGuests()
     }
     
+    
+    @IBAction func wifiSwitchChanged(_ sender: UISwitch) {
+        
+    }
+    
+    
+    @IBAction func cancelBarButtonTapped(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)    // dismiss(): bir önceki VC'ye geri dön
+    }
 }

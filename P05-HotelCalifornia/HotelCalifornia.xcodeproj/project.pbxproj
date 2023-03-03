@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACBC9F3729B2366F008A8E26 /* RegistrationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC9F3629B2366F008A8E26 /* RegistrationsTableViewController.swift */; };
+		ACCABCD029B20C45008D07FC /* SelectRoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCABCCF29B20C45008D07FC /* SelectRoomTypeTableViewController.swift */; };
 		ACD93F7929B0CA2900604CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD93F7829B0CA2900604CBE /* AppDelegate.swift */; };
 		ACD93F7B29B0CA2900604CBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD93F7A29B0CA2900604CBE /* SceneDelegate.swift */; };
 		ACD93F8029B0CA2900604CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD93F7E29B0CA2900604CBE /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ACBC9F3629B2366F008A8E26 /* RegistrationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationsTableViewController.swift; sourceTree = "<group>"; };
+		ACCABCCF29B20C45008D07FC /* SelectRoomTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomTypeTableViewController.swift; sourceTree = "<group>"; };
 		ACD93F7529B0CA2900604CBE /* HotelCalifornia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelCalifornia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD93F7829B0CA2900604CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD93F7A29B0CA2900604CBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				ACD93F9129B0DAAF00604CBE /* AddRegistrationTableViewController.swift */,
+				ACCABCCF29B20C45008D07FC /* SelectRoomTypeTableViewController.swift */,
+				ACBC9F3629B2366F008A8E26 /* RegistrationsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -160,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCABCD029B20C45008D07FC /* SelectRoomTypeTableViewController.swift in Sources */,
 				ACD93F9029B0CBA400604CBE /* RoomType.swift in Sources */,
 				ACD93F9229B0DAAF00604CBE /* AddRegistrationTableViewController.swift in Sources */,
+				ACBC9F3729B2366F008A8E26 /* RegistrationsTableViewController.swift in Sources */,
 				ACD93F7929B0CA2900604CBE /* AppDelegate.swift in Sources */,
 				ACD93F8D29B0CAFC00604CBE /* Registration.swift in Sources */,
 				ACD93F7B29B0CA2900604CBE /* SceneDelegate.swift in Sources */,
