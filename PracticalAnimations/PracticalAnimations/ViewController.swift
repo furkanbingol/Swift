@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var animatableView: UIView!
-    
+    @IBOutlet weak var widthConstraint: NSLayoutConstraint!   // Constraintleri UI-element olarak bağlayabiliriz.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +59,8 @@ class ViewController: UIViewController {
         //applyScaleTransformation()
         //applyRotationTransformation()
         //applyTranslateTransformation()
-        applyComplexTransform()
+        //applyComplexTransform()
+        animateWidthConstraintChange()
     }
     
     // Transform: Arayüz elemanları üzerinde; "scale, rotate, translate" gibi değişiklikler
@@ -113,8 +114,19 @@ class ViewController: UIViewController {
                 self.animatableView.transform = .identity
             }
         }
-
     }
     
+    
+    func animateWidthConstraintChange() {
+        self.widthConstraint.constant = 300
+        
+        // view.layoutIfNeeded()
+        // Bir önceki durum ile şu an arasındaki CONSTRAINT'lerde bir değişim varsa,
+        // constraintleri yeniden hesaplar. (Bu işlem anime edilebilir.)
+        
+        UIView.animate(withDuration: 2) {
+            self.view.layoutIfNeeded()
+        }
+    }
 }
 
