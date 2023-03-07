@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC400AAE29B4C51800A5946D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC400AAD29B4C51800A5946D /* AppDelegate.swift */; };
+		AC400AB029B4C51800A5946D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC400AAF29B4C51800A5946D /* SceneDelegate.swift */; };
+		AC400AB229B4C51800A5946D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC400AB129B4C51800A5946D /* ViewController.swift */; };
+		AC400AB529B4C51800A5946D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC400AB329B4C51800A5946D /* Main.storyboard */; };
+		AC400AB729B4C51900A5946D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC400AB629B4C51900A5946D /* Assets.xcassets */; };
+		AC400ABA29B4C51900A5946D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC400AB829B4C51900A5946D /* LaunchScreen.storyboard */; };
+		AC400AC429B4CB2600A5946D /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC400AC329B4CB2600A5946D /* Music.swift */; };
+		AC400AD529B53A6A00A5946D /* deli.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC400ACD29B53A6900A5946D /* deli.mp3 */; };
+		AC400AD629B53A6A00A5946D /* sakince_yoruldum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC400ACE29B53A6900A5946D /* sakince_yoruldum.mp3 */; };
+		AC400AD729B53A6A00A5946D /* dibine_kadar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC400ACF29B53A6900A5946D /* dibine_kadar.mp3 */; };
+		AC400AD829B53A6A00A5946D /* sen_aglama.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC400AD029B53A6900A5946D /* sen_aglama.mp3 */; };
+		AC400AD929B53A6A00A5946D /* nkbi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC400AD129B53A6900A5946D /* nkbi.mp3 */; };
+		AC400ADA29B53A6A00A5946D /* bir_derdim_var.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC400AD229B53A6900A5946D /* bir_derdim_var.mp3 */; };
+		AC400ADB29B53A6A00A5946D /* islak_islak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC400AD329B53A6900A5946D /* islak_islak.mp3 */; };
+		AC400ADC29B53A6A00A5946D /* sarilirim_birine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC400AD429B53A6A00A5946D /* sarilirim_birine.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC400AAA29B4C51800A5946D /* MusicAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC400AAD29B4C51800A5946D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC400AAF29B4C51800A5946D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC400AB129B4C51800A5946D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC400AB429B4C51800A5946D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC400AB629B4C51900A5946D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC400AB929B4C51900A5946D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC400ABB29B4C51900A5946D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC400AC329B4CB2600A5946D /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		AC400ACD29B53A6900A5946D /* deli.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = deli.mp3; sourceTree = "<group>"; };
+		AC400ACE29B53A6900A5946D /* sakince_yoruldum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sakince_yoruldum.mp3; sourceTree = "<group>"; };
+		AC400ACF29B53A6900A5946D /* dibine_kadar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dibine_kadar.mp3; sourceTree = "<group>"; };
+		AC400AD029B53A6900A5946D /* sen_aglama.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sen_aglama.mp3; sourceTree = "<group>"; };
+		AC400AD129B53A6900A5946D /* nkbi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nkbi.mp3; sourceTree = "<group>"; };
+		AC400AD229B53A6900A5946D /* bir_derdim_var.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bir_derdim_var.mp3; sourceTree = "<group>"; };
+		AC400AD329B53A6900A5946D /* islak_islak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = islak_islak.mp3; sourceTree = "<group>"; };
+		AC400AD429B53A6A00A5946D /* sarilirim_birine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sarilirim_birine.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC400AA729B4C51800A5946D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC400AA129B4C51800A5946D = {
+			isa = PBXGroup;
+			children = (
+				AC400AAC29B4C51800A5946D /* MusicAnimation */,
+				AC400AAB29B4C51800A5946D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC400AAB29B4C51800A5946D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC400AAA29B4C51800A5946D /* MusicAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC400AAC29B4C51800A5946D /* MusicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				AC400ADD29B53AA500A5946D /* Audio */,
+				AC400AC229B4CAF900A5946D /* Controller */,
+				AC400AC129B4CAF000A5946D /* Model */,
+				AC400AAD29B4C51800A5946D /* AppDelegate.swift */,
+				AC400AAF29B4C51800A5946D /* SceneDelegate.swift */,
+				AC400AB329B4C51800A5946D /* Main.storyboard */,
+				AC400AB629B4C51900A5946D /* Assets.xcassets */,
+				AC400AB829B4C51900A5946D /* LaunchScreen.storyboard */,
+				AC400ABB29B4C51900A5946D /* Info.plist */,
+			);
+			path = MusicAnimation;
+			sourceTree = "<group>";
+		};
+		AC400AC129B4CAF000A5946D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC400AC329B4CB2600A5946D /* Music.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC400AC229B4CAF900A5946D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC400AB129B4C51800A5946D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC400ADD29B53AA500A5946D /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				AC400AD229B53A6900A5946D /* bir_derdim_var.mp3 */,
+				AC400ACF29B53A6900A5946D /* dibine_kadar.mp3 */,
+				AC400AD029B53A6900A5946D /* sen_aglama.mp3 */,
+				AC400AD329B53A6900A5946D /* islak_islak.mp3 */,
+				AC400AD129B53A6900A5946D /* nkbi.mp3 */,
+				AC400ACD29B53A6900A5946D /* deli.mp3 */,
+				AC400AD429B53A6A00A5946D /* sarilirim_birine.mp3 */,
+				AC400ACE29B53A6900A5946D /* sakince_yoruldum.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC400AA929B4C51800A5946D /* MusicAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC400ABE29B4C51900A5946D /* Build configuration list for PBXNativeTarget "MusicAnimation" */;
+			buildPhases = (
+				AC400AA629B4C51800A5946D /* Sources */,
+				AC400AA729B4C51800A5946D /* Frameworks */,
+				AC400AA829B4C51800A5946D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicAnimation;
+			productName = MusicAnimation;
+			productReference = AC400AAA29B4C51800A5946D /* MusicAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC400AA229B4C51800A5946D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AC400AA929B4C51800A5946D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = AC400AA529B4C51800A5946D /* Build configuration list for PBXProject "MusicAnimation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC400AA129B4C51800A5946D;
+			productRefGroup = AC400AAB29B4C51800A5946D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC400AA929B4C51800A5946D /* MusicAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC400AA829B4C51800A5946D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC400AD529B53A6A00A5946D /* deli.mp3 in Resources */,
+				AC400AD629B53A6A00A5946D /* sakince_yoruldum.mp3 in Resources */,
+				AC400AD729B53A6A00A5946D /* dibine_kadar.mp3 in Resources */,
+				AC400AD829B53A6A00A5946D /* sen_aglama.mp3 in Resources */,
+				AC400AD929B53A6A00A5946D /* nkbi.mp3 in Resources */,
+				AC400ADA29B53A6A00A5946D /* bir_derdim_var.mp3 in Resources */,
+				AC400ADB29B53A6A00A5946D /* islak_islak.mp3 in Resources */,
+				AC400ADC29B53A6A00A5946D /* sarilirim_birine.mp3 in Resources */,
+				AC400ABA29B4C51900A5946D /* LaunchScreen.storyboard in Resources */,
+				AC400AB729B4C51900A5946D /* Assets.xcassets in Resources */,
+				AC400AB529B4C51800A5946D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC400AA629B4C51800A5946D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC400AB229B4C51800A5946D /* ViewController.swift in Sources */,
+				AC400AAE29B4C51800A5946D /* AppDelegate.swift in Sources */,
+				AC400AB029B4C51800A5946D /* SceneDelegate.swift in Sources */,
+				AC400AC429B4CB2600A5946D /* Music.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC400AB329B4C51800A5946D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC400AB429B4C51800A5946D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC400AB829B4C51900A5946D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC400AB929B4C51900A5946D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC400ABC29B4C51900A5946D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC400ABD29B4C51900A5946D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC400ABF29B4C51900A5946D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V92W5X939L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicAnimation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkanbingol.MusicAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC400AC029B4C51900A5946D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V92W5X939L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicAnimation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkanbingol.MusicAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC400AA529B4C51800A5946D /* Build configuration list for PBXProject "MusicAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC400ABC29B4C51900A5946D /* Debug */,
+				AC400ABD29B4C51900A5946D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC400ABE29B4C51900A5946D /* Build configuration list for PBXNativeTarget "MusicAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC400ABF29B4C51900A5946D /* Debug */,
+				AC400AC029B4C51900A5946D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC400AA229B4C51800A5946D /* Project object */;
+}
