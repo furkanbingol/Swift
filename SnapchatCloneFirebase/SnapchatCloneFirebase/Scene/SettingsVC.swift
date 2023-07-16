@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 final class SettingsVC: UIViewController {
 
@@ -23,8 +24,20 @@ final class SettingsVC: UIViewController {
     
     // MARK: - Functions
     @IBAction func logoutTapped(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Are you sure?", message: "", preferredStyle: .alert)
+        let noAction = UIAlertAction(title: "No", style: .cancel)
+        let yesAction = UIAlertAction(title: "Yes", style: .default) { action in
+            do {
+                try Auth.auth().signOut()
+                self.performSegue(withIdentifier: "toSignInVC", sender: nil)
+            } catch {
+                print("error")
+            }
+        }
         
+        alert.addAction(noAction)
+        alert.addAction(yesAction)
+        present(alert, animated: true)
     }
     
-
 }
