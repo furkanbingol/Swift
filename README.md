@@ -19,20 +19,23 @@
 
 |  |  |  |
 |-----|-----|-----|
-[AppLifecycle](/AppLifecycle) | [Autolayout&StackView](/Autolayout&StackView) | [Calculator](/Calculator) |
+[AppLifecycle](/AppLifecycle) | [ArtBook](/ArtBook) | [Autolayout&StackView](/Autolayout&StackView) | 
+[Calculator](/Calculator) | [CardDeckApp](/CardDeckApp) | [CatchThePokeball](/CatchThePokeball) |
 [CollectionViewCustomCell](/CollectionViewCustomCell) | [CollectionViewHeaderFooter](/CollectionViewHeaderFooter) | [CollectionViewInTableViewCell](/CollectionViewInTableViewCell) |
 [CollectionViewInstagramStories](/CollectionViewInstagramStories) | [CollectionViewLearning](/CollectionViewLearning) | [CollectionViewSupplementaryViews](/CollectionViewSupplementaryViews) |
-[DarkMode](/DarkMode) | [DataStorage](/DataStorage) | [FaceRecognition](/FaceRecognition) |
+[CryptoCrazyApp-MVVM](/CryptoCrazyApp-MVVM) | [DarkMode](/DarkMode) | [DataStorage](/DataStorage) |
+[DependencyInjection](/DependencyInjection) | [ExpandableTableViewCells](/ExpandableTableViewCells) | [FaceRecognition](/FaceRecognition) |
 [FirebaseFirestoreDatabase](/FirebaseFirestoreDatabase) | [FirebaseLoginScreen](/FirebaseLoginScreen) | [FirebasePhotoUploadDownload](/FirebasePhotoUploadDownload) | 
 [FirebaseRealtimeDatabase](/FirebaseRealtimeDatabase) | [FirstApp](/FirstApp) | [FlashlightBasic](/FlashlightBasic) |
-[GestureRecognizer](/GestureRecognizer) | [HTTP-URLSession-JSON](/HTTP-URLSession-JSON) | [InstaCloneFirebase](/InstaCloneFirebase) | 
-[InterfaceBuilder](/InterfaceBuilder) | [Layout](/Layout) | [MicrophoneUsage](/MicrophoneUsage) |
-[MusicAnimation](/MusicAnimation) | [OOP](/OOP) | [ObjectsWithCode](/ObjectsWithCode) |
-[Project 01 - CatchThePokeball](/P01-CatchThePokeball) | [Project 02 - GameGallery](/P02-GameGallery) | [Project 03 - ArtBook](/P03-ArtBook) | 
-[Project 04 - MapJournal](/P04-MapJournal) | [P05-HotelCalifornia](/P05-HotelCalifornia) | [PracticalAnimations](/PracticalAnimations) | 
-[RegularShowApp](/RegularShowApp) | [RetainCycle&ARC](/RetainCycle&ARC) | [Segue&NavigationController](/Segue&NavigationController) |
-[Segues](/Segues) | [SpacePictureOfTheDay-API](/SpacePictureOfTheDay-API) | [Swift Basics](Swift%20Basics) |
-[SwiftDetailedSyntax](/SwiftDetailedSyntax) | [SystemViewControllers](/SystemViewControllers) | [TabBarController](/TabBarController) | 
-[Timer](/Timer) | [UIAlertController](/UIAlertController) | [UICollectionView](/UICollectionView) |
-[UINavigationControllerProgrammatically](/UINavigationControllerProgrammatically) | [UITabBarControllerProgrammatically](/UITabBarControllerProgrammatically) | [UITableView](/UITableView) | 
-[UITableView-Advanced](/UITableView-Advanced) | [ViewControllerLifecycle](/ViewControllerLifecycle) | [iOSConcurrency](/iOSConcurrency)
+[GameGallery](/GameGallery) | [Generics](/Generics) | [GestureRecognizer](/GestureRecognizer) |
+[HTTP-URLSession-JSON](/HTTP-URLSession-JSON) | [HotelCalifornia](/HotelCalifornia) | [InstaCloneFirebase](/InstaCloneFirebase) | 
+[InterfaceBuilder](/InterfaceBuilder) | [Layout](/Layout) | [MapJournal](/MapJournal) |
+[MicrophoneUsage](/MicrophoneUsage) | [MusicAnimation](/MusicAnimation) | [OOP](/OOP) |
+[ObjectsWithCode](/ObjectsWithCode) | [PracticalAnimations](/PracticalAnimations) | [RegularShowApp](/RegularShowApp) |
+[RetainCycle&ARC](/RetainCycle&ARC) | [RetainCycle&ARC-II](/RetainCycle&ARC-II) | [Segue&NavigationController](/Segue&NavigationController) |
+[Segues](/Segues) | [SnapchatCloneFirebase](/SnapchatCloneFirebase) | [SpacePictureOfTheDay-API](/SpacePictureOfTheDay-API) |
+[Swift Basics](Swift%20Basics) | [SwiftDetailedSyntax](/SwiftDetailedSyntax) | [SystemViewControllers](/SystemViewControllers) |
+[TabBarController](/TabBarController) | [Timer](/Timer) | [UIAlertController](/UIAlertController) |
+[UICollectionView](/UICollectionView) | [UINavigationControllerProgrammatically](/UINavigationControllerProgrammatically) | [UITabBarControllerProgrammatically](/UITabBarControllerProgrammatically) |
+[UITableView](/UITableView) | [UITableView-Advanced](/UITableView-Advanced) | [ViewControllerLifecycle](/ViewControllerLifecycle) |
+[iOSConcurrency](/iOSConcurrency) |
