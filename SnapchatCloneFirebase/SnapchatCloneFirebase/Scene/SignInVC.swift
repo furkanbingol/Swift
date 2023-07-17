@@ -124,11 +124,5 @@ final class SignInVC: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toFeedVC" {
-            // Data transfer operations
-        }
-    }
-    
+        
 }

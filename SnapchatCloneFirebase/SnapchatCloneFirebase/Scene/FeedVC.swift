@@ -25,6 +25,7 @@ final class FeedVC: UIViewController {
     // MARK: - Properties
     let firestore = Firestore.firestore()
     var snapArray = [Snap]()
+    var chosenSnap: Snap?
     
     
     // MARK: - Life Cycle
@@ -59,6 +60,7 @@ final class FeedVC: UIViewController {
     
     private func getSnapsFromFirebase() {
         // Her değisiklik oldugunda degisimi yansıtacak --> addSnapshotListener
+        // .order(by: "date", descending: true)         --> Çekilen snap'leri güncel tarihten eski tarihe olacak şekilde çekiyoruz.
         firestore.collection("Snaps").order(by: "date", descending: true).addSnapshotListener { snapshot, error in
             guard let snapshot = snapshot,
                   error == nil else {
@@ -83,16 +85,16 @@ final class FeedVC: UIViewController {
                         if diffTime >= 24 {
                             // Delete from firebase
                             self.firestore.collection("Snaps").document(documentID).delete()
-                        } else {
-                            // Timeleft info --> SnapVC
+                        }
+                        else {
+                            let snap = Snap(username: snapOwner,
+                                            imageUrlArray: imageUrlArray,
+                                            date: date.dateValue(),
+                                            timeDifference: 24 - diffTime)
+                            self.snapArray.append(snap)
                         }
                     }
                     
-                    let snap = Snap(username: snapOwner,
-                                    imageUrlArray: imageUrlArray,
-                                    date: date.dateValue())
-                    
-                    self.snapArray.append(snap)
                 }
                 self.tableView.reloadData()
             }
@@ -106,6 +108,13 @@ final class FeedVC: UIViewController {
 
         alert.addAction(okAction)
         present(alert, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSnapVC" {
+            let destVC = segue.destination as! SnapVC
+            destVC.selectedSnap = self.chosenSnap
+        }
     }
     
 }
@@ -128,6 +137,8 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        self.chosenSnap = self.snapArray[indexPath.row]
+        performSegue(withIdentifier: "toSnapVC", sender: nil)
     }
     
 }

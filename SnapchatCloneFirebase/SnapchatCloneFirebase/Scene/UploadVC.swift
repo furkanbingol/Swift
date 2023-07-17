@@ -88,8 +88,10 @@ final class UploadVC: UIViewController {
                                             return
                                         }
                                         
-                                        self.tabBarController?.selectedIndex = 0
-                                        self.imageView.image = UIImage(named: "select-image")
+                                        DispatchQueue.main.async {
+                                            self.tabBarController?.selectedIndex = 0
+                                            self.imageView.image = UIImage(named: "select-image")
+                                        }
                                     }
                                 }
                             }
@@ -104,9 +106,11 @@ final class UploadVC: UIViewController {
                                     self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error!")
                                     return
                                 }
-                                 
-                                self.tabBarController?.selectedIndex = 0
-                                self.imageView.image = UIImage(named: "select-image")
+                                
+                                DispatchQueue.main.async {
+                                    self.tabBarController?.selectedIndex = 0
+                                    self.imageView.image = UIImage(named: "select-image")
+                                }
                             }
                         }
                         
@@ -140,6 +144,6 @@ extension UploadVC: UIImagePickerControllerDelegate, UINavigationControllerDeleg
         
         picker.dismiss(animated: true)
         imageView.image = info[.editedImage] as? UIImage
-        self.dismiss(animated: true)
+        // self.dismiss(animated: true)
     }
 }

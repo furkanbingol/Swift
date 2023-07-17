@@ -272,8 +272,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time left: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gf-f6-D5x">
-                                <rect key="frame" x="148.66666666666666" y="58.999999999999993" width="96" height="26.666666666666664"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Left: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gf-f6-D5x">
+                                <rect key="frame" x="145" y="69" width="103" height="27"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -283,7 +283,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1Gf-f6-D5x" firstAttribute="centerX" secondItem="zkA-sB-fru" secondAttribute="centerX" id="E7F-kX-acu"/>
-                            <constraint firstItem="1Gf-f6-D5x" firstAttribute="top" secondItem="vZB-Am-3lb" secondAttribute="top" id="phs-fI-AIW"/>
+                            <constraint firstItem="1Gf-f6-D5x" firstAttribute="top" secondItem="vZB-Am-3lb" secondAttribute="top" constant="10" id="phs-fI-AIW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qvZ-sd-aav"/>

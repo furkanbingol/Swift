@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FeedTableViewCell: UITableViewCell {
 
@@ -13,8 +14,7 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var snapImageView: UIImageView! {
         willSet {
-            newValue.layer.cornerRadius = 8
-            // newValue.contentMode = .scaleAspectFill
+            newValue.contentMode = .scaleAspectFit
         }
     }
     
@@ -23,8 +23,10 @@ class FeedTableViewCell: UITableViewCell {
     }
     
     func configureCell(username: String, imageUrl: String) {
-        usernameLabel.text = username
-        // snapImageView.image
+        DispatchQueue.main.async {
+            self.usernameLabel.text = username
+            self.snapImageView.kf.setImage(with: URL(string: imageUrl))
+        }
     }
 
 }

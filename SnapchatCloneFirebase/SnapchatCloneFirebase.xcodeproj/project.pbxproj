@@ -10,6 +10,7 @@
 		AC15BD9C2A6438F400DD4F8B /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15BD9B2A6438F400DD4F8B /* UserSingleton.swift */; };
 		AC15BD9E2A64893900DD4F8B /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15BD9D2A64893900DD4F8B /* FeedTableViewCell.swift */; };
 		AC15BDA02A648C2D00DD4F8B /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15BD9F2A648C2D00DD4F8B /* Snap.swift */; };
+		AC55C5DB2A655FBC00B36DF3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AC55C5DA2A655FBC00B36DF3 /* Kingfisher */; };
 		ACC472322A6305CE00D175DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC472312A6305CE00D175DE /* AppDelegate.swift */; };
 		ACC472342A6305CE00D175DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC472332A6305CE00D175DE /* SceneDelegate.swift */; };
 		ACC472392A6305CE00D175DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC472372A6305CE00D175DE /* Main.storyboard */; };
@@ -24,9 +25,12 @@
 		ACC472562A631BA600D175DE /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC472552A631BA600D175DE /* UploadVC.swift */; };
 		ACC472582A631BB000D175DE /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC472572A631BB000D175DE /* SettingsVC.swift */; };
 		ACC4725A2A63266600D175DE /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC472592A63266600D175DE /* SnapVC.swift */; };
+		E566F79846FA9BF66995DF66 /* Pods_SnapchatCloneFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7DB9AF8593A5A39D83F7CE /* Pods_SnapchatCloneFirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E7DB9AF8593A5A39D83F7CE /* Pods_SnapchatCloneFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapchatCloneFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC614527EF8EC9EECC6DBD3 /* Pods-SnapchatCloneFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapchatCloneFirebase.release.xcconfig"; path = "Target Support Files/Pods-SnapchatCloneFirebase/Pods-SnapchatCloneFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		AC15BD9B2A6438F400DD4F8B /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		AC15BD9D2A64893900DD4F8B /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		AC15BD9F2A648C2D00DD4F8B /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 		ACC472552A631BA600D175DE /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		ACC472572A631BB000D175DE /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		ACC472592A63266600D175DE /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
+		DC7600585EDC86CB966245F3 /* Pods-SnapchatCloneFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapchatCloneFirebase.debug.xcconfig"; path = "Target Support Files/Pods-SnapchatCloneFirebase/Pods-SnapchatCloneFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,15 +55,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC55C5DB2A655FBC00B36DF3 /* Kingfisher in Frameworks */,
 				ACC4724C2A63085300D175DE /* FirebaseAuth in Frameworks */,
 				ACC4724E2A63085300D175DE /* FirebaseFirestore in Frameworks */,
 				ACC472502A63085300D175DE /* FirebaseStorage in Frameworks */,
+				E566F79846FA9BF66995DF66 /* Pods_SnapchatCloneFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0119A59239FBD42C0F2A5CF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E7DB9AF8593A5A39D83F7CE /* Pods_SnapchatCloneFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC15BD972A6436D100DD4F8B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,8 @@
 			children = (
 				ACC472302A6305CE00D175DE /* SnapchatCloneFirebase */,
 				ACC4722F2A6305CE00D175DE /* Products */,
+				B3ED97683D6FB27C815E9A6C /* Pods */,
+				0119A59239FBD42C0F2A5CF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +154,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B3ED97683D6FB27C815E9A6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC7600585EDC86CB966245F3 /* Pods-SnapchatCloneFirebase.debug.xcconfig */,
+				4DC614527EF8EC9EECC6DBD3 /* Pods-SnapchatCloneFirebase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACC472422A6305CF00D175DE /* Build configuration list for PBXNativeTarget "SnapchatCloneFirebase" */;
 			buildPhases = (
+				6A02534D17594DF6A164E7E5 /* [CP] Check Pods Manifest.lock */,
 				ACC4722A2A6305CE00D175DE /* Sources */,
 				ACC4722B2A6305CE00D175DE /* Frameworks */,
 				ACC4722C2A6305CE00D175DE /* Resources */,
+				473F676C3FED9BB313D169FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +186,7 @@
 				ACC4724B2A63085300D175DE /* FirebaseAuth */,
 				ACC4724D2A63085300D175DE /* FirebaseFirestore */,
 				ACC4724F2A63085300D175DE /* FirebaseStorage */,
+				AC55C5DA2A655FBC00B36DF3 /* Kingfisher */,
 			);
 			productName = SnapchatCloneFirebase;
 			productReference = ACC4722E2A6305CE00D175DE /* SnapchatCloneFirebase.app */;
@@ -188,6 +218,7 @@
 			mainGroup = ACC472252A6305CE00D175DE;
 			packageReferences = (
 				ACC4724A2A63085300D175DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AC55C5D92A655FBC00B36DF3 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
 			);
 			productRefGroup = ACC4722F2A6305CE00D175DE /* Products */;
 			projectDirPath = "";
@@ -211,6 +242,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		473F676C3FED9BB313D169FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapchatCloneFirebase/Pods-SnapchatCloneFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapchatCloneFirebase/Pods-SnapchatCloneFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapchatCloneFirebase/Pods-SnapchatCloneFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A02534D17594DF6A164E7E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapchatCloneFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACC4722A2A6305CE00D175DE /* Sources */ = {
@@ -368,6 +441,7 @@
 		};
 		ACC472432A6305CF00D175DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC7600585EDC86CB966245F3 /* Pods-SnapchatCloneFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -396,6 +470,7 @@
 		};
 		ACC472442A6305CF00D175DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DC614527EF8EC9EECC6DBD3 /* Pods-SnapchatCloneFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,6 +521,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AC55C5D92A655FBC00B36DF3 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		ACC4724A2A63085300D175DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -457,6 +540,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AC55C5DA2A655FBC00B36DF3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC55C5D92A655FBC00B36DF3 /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
+			productName = Kingfisher;
+		};
 		ACC4724B2A63085300D175DE /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ACC4724A2A63085300D175DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
