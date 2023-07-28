@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACC72D2D2A74377700643DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D2C2A74377700643DD8 /* AppDelegate.swift */; };
+		ACC72D2F2A74377700643DD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D2E2A74377700643DD8 /* SceneDelegate.swift */; };
+		ACC72D312A74377700643DD8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D302A74377700643DD8 /* RootViewController.swift */; };
+		ACC72D362A74377800643DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC72D352A74377800643DD8 /* Assets.xcassets */; };
+		ACC72D392A74377800643DD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC72D372A74377800643DD8 /* LaunchScreen.storyboard */; };
+		ACC72D442A74377800643DD8 /* LoginCasePOP_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D432A74377800643DD8 /* LoginCasePOP_MVVMTests.swift */; };
+		ACC72D4E2A74377800643DD8 /* LoginCasePOP_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D4D2A74377800643DD8 /* LoginCasePOP_MVVMUITests.swift */; };
+		ACC72D502A74377800643DD8 /* LoginCasePOP_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D4F2A74377800643DD8 /* LoginCasePOP_MVVMUITestsLaunchTests.swift */; };
+		ACC72D602A74386100643DD8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D5F2A74386100643DD8 /* LoginViewController.swift */; };
+		ACC72D622A74387D00643DD8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D612A74387D00643DD8 /* MainViewController.swift */; };
+		ACC72D662A743F7300643DD8 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D652A743F7300643DD8 /* RootViewModel.swift */; };
+		ACC72D682A743FCE00643DD8 /* RootViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D672A743FCE00643DD8 /* RootViewModelOutput.swift */; };
+		ACC72D6B2A74432500643DD8 /* LoginStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D6A2A74432500643DD8 /* LoginStorageService.swift */; };
+		ACC72D6D2A74437800643DD8 /* LoginStorageServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC72D6C2A74437800643DD8 /* LoginStorageServiceImpl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACC72D402A74377800643DD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACC72D212A74377700643DD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACC72D282A74377700643DD8;
+			remoteInfo = "LoginCasePOP-MVVM";
+		};
+		ACC72D4A2A74377800643DD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACC72D212A74377700643DD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACC72D282A74377700643DD8;
+			remoteInfo = "LoginCasePOP-MVVM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACC72D292A74377700643DD8 /* LoginCasePOP-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoginCasePOP-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC72D2C2A74377700643DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACC72D2E2A74377700643DD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ACC72D302A74377700643DD8 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		ACC72D352A74377800643DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACC72D382A74377800643DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACC72D3A2A74377800643DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC72D3F2A74377800643DD8 /* LoginCasePOP-MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoginCasePOP-MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC72D432A74377800643DD8 /* LoginCasePOP_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCasePOP_MVVMTests.swift; sourceTree = "<group>"; };
+		ACC72D492A74377800643DD8 /* LoginCasePOP-MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoginCasePOP-MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC72D4D2A74377800643DD8 /* LoginCasePOP_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCasePOP_MVVMUITests.swift; sourceTree = "<group>"; };
+		ACC72D4F2A74377800643DD8 /* LoginCasePOP_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCasePOP_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACC72D5F2A74386100643DD8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ACC72D612A74387D00643DD8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ACC72D652A743F7300643DD8 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		ACC72D672A743FCE00643DD8 /* RootViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelOutput.swift; sourceTree = "<group>"; };
+		ACC72D6A2A74432500643DD8 /* LoginStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStorageService.swift; sourceTree = "<group>"; };
+		ACC72D6C2A74437800643DD8 /* LoginStorageServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStorageServiceImpl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACC72D262A74377700643DD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC72D3C2A74377800643DD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC72D462A74377800643DD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACC72D202A74377700643DD8 = {
+			isa = PBXGroup;
+			children = (
+				ACC72D2B2A74377700643DD8 /* LoginCasePOP-MVVM */,
+				ACC72D422A74377800643DD8 /* LoginCasePOP-MVVMTests */,
+				ACC72D4C2A74377800643DD8 /* LoginCasePOP-MVVMUITests */,
+				ACC72D2A2A74377700643DD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACC72D2A2A74377700643DD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACC72D292A74377700643DD8 /* LoginCasePOP-MVVM.app */,
+				ACC72D3F2A74377800643DD8 /* LoginCasePOP-MVVMTests.xctest */,
+				ACC72D492A74377800643DD8 /* LoginCasePOP-MVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACC72D2B2A74377700643DD8 /* LoginCasePOP-MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				ACC72D5D2A74382E00643DD8 /* Core */,
+				ACC72D5E2A74383100643DD8 /* Resources */,
+				ACC72D5C2A74382A00643DD8 /* Scene */,
+				ACC72D3A2A74377800643DD8 /* Info.plist */,
+			);
+			path = "LoginCasePOP-MVVM";
+			sourceTree = "<group>";
+		};
+		ACC72D422A74377800643DD8 /* LoginCasePOP-MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACC72D432A74377800643DD8 /* LoginCasePOP_MVVMTests.swift */,
+			);
+			path = "LoginCasePOP-MVVMTests";
+			sourceTree = "<group>";
+		};
+		ACC72D4C2A74377800643DD8 /* LoginCasePOP-MVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACC72D4D2A74377800643DD8 /* LoginCasePOP_MVVMUITests.swift */,
+				ACC72D4F2A74377800643DD8 /* LoginCasePOP_MVVMUITestsLaunchTests.swift */,
+			);
+			path = "LoginCasePOP-MVVMUITests";
+			sourceTree = "<group>";
+		};
+		ACC72D5C2A74382A00643DD8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				ACC72D692A74430F00643DD8 /* StorageService */,
+				ACC72D632A743E9F00643DD8 /* View */,
+				ACC72D642A743EA200643DD8 /* ViewModel */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		ACC72D5D2A74382E00643DD8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACC72D2C2A74377700643DD8 /* AppDelegate.swift */,
+				ACC72D2E2A74377700643DD8 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ACC72D5E2A74383100643DD8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACC72D372A74377800643DD8 /* LaunchScreen.storyboard */,
+				ACC72D352A74377800643DD8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ACC72D632A743E9F00643DD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACC72D5F2A74386100643DD8 /* LoginViewController.swift */,
+				ACC72D302A74377700643DD8 /* RootViewController.swift */,
+				ACC72D612A74387D00643DD8 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACC72D642A743EA200643DD8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACC72D652A743F7300643DD8 /* RootViewModel.swift */,
+				ACC72D672A743FCE00643DD8 /* RootViewModelOutput.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACC72D692A74430F00643DD8 /* StorageService */ = {
+			isa = PBXGroup;
+			children = (
+				ACC72D6A2A74432500643DD8 /* LoginStorageService.swift */,
+				ACC72D6C2A74437800643DD8 /* LoginStorageServiceImpl.swift */,
+			);
+			path = StorageService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACC72D282A74377700643DD8 /* LoginCasePOP-MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACC72D532A74377800643DD8 /* Build configuration list for PBXNativeTarget "LoginCasePOP-MVVM" */;
+			buildPhases = (
+				ACC72D252A74377700643DD8 /* Sources */,
+				ACC72D262A74377700643DD8 /* Frameworks */,
+				ACC72D272A74377700643DD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LoginCasePOP-MVVM";
+			productName = "LoginCasePOP-MVVM";
+			productReference = ACC72D292A74377700643DD8 /* LoginCasePOP-MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACC72D3E2A74377800643DD8 /* LoginCasePOP-MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACC72D562A74377800643DD8 /* Build configuration list for PBXNativeTarget "LoginCasePOP-MVVMTests" */;
+			buildPhases = (
+				ACC72D3B2A74377800643DD8 /* Sources */,
+				ACC72D3C2A74377800643DD8 /* Frameworks */,
+				ACC72D3D2A74377800643DD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACC72D412A74377800643DD8 /* PBXTargetDependency */,
+			);
+			name = "LoginCasePOP-MVVMTests";
+			productName = "LoginCasePOP-MVVMTests";
+			productReference = ACC72D3F2A74377800643DD8 /* LoginCasePOP-MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACC72D482A74377800643DD8 /* LoginCasePOP-MVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACC72D592A74377800643DD8 /* Build configuration list for PBXNativeTarget "LoginCasePOP-MVVMUITests" */;
+			buildPhases = (
+				ACC72D452A74377800643DD8 /* Sources */,
+				ACC72D462A74377800643DD8 /* Frameworks */,
+				ACC72D472A74377800643DD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACC72D4B2A74377800643DD8 /* PBXTargetDependency */,
+			);
+			name = "LoginCasePOP-MVVMUITests";
+			productName = "LoginCasePOP-MVVMUITests";
+			productReference = ACC72D492A74377800643DD8 /* LoginCasePOP-MVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACC72D212A74377700643DD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ACC72D282A74377700643DD8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					ACC72D3E2A74377800643DD8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = ACC72D282A74377700643DD8;
+					};
+					ACC72D482A74377800643DD8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = ACC72D282A74377700643DD8;
+					};
+				};
+			};
+			buildConfigurationList = ACC72D242A74377700643DD8 /* Build configuration list for PBXProject "LoginCasePOP-MVVM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACC72D202A74377700643DD8;
+			productRefGroup = ACC72D2A2A74377700643DD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACC72D282A74377700643DD8 /* LoginCasePOP-MVVM */,
+				ACC72D3E2A74377800643DD8 /* LoginCasePOP-MVVMTests */,
+				ACC72D482A74377800643DD8 /* LoginCasePOP-MVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACC72D272A74377700643DD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC72D392A74377800643DD8 /* LaunchScreen.storyboard in Resources */,
+				ACC72D362A74377800643DD8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC72D3D2A74377800643DD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC72D472A74377800643DD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACC72D252A74377700643DD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC72D6D2A74437800643DD8 /* LoginStorageServiceImpl.swift in Sources */,
+				ACC72D602A74386100643DD8 /* LoginViewController.swift in Sources */,
+				ACC72D312A74377700643DD8 /* RootViewController.swift in Sources */,
+				ACC72D682A743FCE00643DD8 /* RootViewModelOutput.swift in Sources */,
+				ACC72D6B2A74432500643DD8 /* LoginStorageService.swift in Sources */,
+				ACC72D2D2A74377700643DD8 /* AppDelegate.swift in Sources */,
+				ACC72D2F2A74377700643DD8 /* SceneDelegate.swift in Sources */,
+				ACC72D662A743F7300643DD8 /* RootViewModel.swift in Sources */,
+				ACC72D622A74387D00643DD8 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC72D3B2A74377800643DD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC72D442A74377800643DD8 /* LoginCasePOP_MVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC72D452A74377800643DD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC72D502A74377800643DD8 /* LoginCasePOP_MVVMUITestsLaunchTests.swift in Sources */,
+				ACC72D4E2A74377800643DD8 /* LoginCasePOP_MVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACC72D412A74377800643DD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACC72D282A74377700643DD8 /* LoginCasePOP-MVVM */;
+			targetProxy = ACC72D402A74377800643DD8 /* PBXContainerItemProxy */;
+		};
+		ACC72D4B2A74377800643DD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACC72D282A74377700643DD8 /* LoginCasePOP-MVVM */;
+			targetProxy = ACC72D4A2A74377800643DD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACC72D372A74377800643DD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACC72D382A74377800643DD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACC72D512A74377800643DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACC72D522A74377800643DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACC72D542A74377800643DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V92W5X939L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LoginCasePOP-MVVM/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.furkanbingol.LoginCasePOP-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACC72D552A74377800643DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V92W5X939L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LoginCasePOP-MVVM/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.furkanbingol.LoginCasePOP-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACC72D572A74377800643DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V92W5X939L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.furkanbingol.LoginCasePOP-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginCasePOP-MVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoginCasePOP-MVVM";
+			};
+			name = Debug;
+		};
+		ACC72D582A74377800643DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V92W5X939L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.furkanbingol.LoginCasePOP-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginCasePOP-MVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoginCasePOP-MVVM";
+			};
+			name = Release;
+		};
+		ACC72D5A2A74377800643DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V92W5X939L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.furkanbingol.LoginCasePOP-MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LoginCasePOP-MVVM";
+			};
+			name = Debug;
+		};
+		ACC72D5B2A74377800643DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V92W5X939L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.furkanbingol.LoginCasePOP-MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LoginCasePOP-MVVM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACC72D242A74377700643DD8 /* Build configuration list for PBXProject "LoginCasePOP-MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC72D512A74377800643DD8 /* Debug */,
+				ACC72D522A74377800643DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACC72D532A74377800643DD8 /* Build configuration list for PBXNativeTarget "LoginCasePOP-MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC72D542A74377800643DD8 /* Debug */,
+				ACC72D552A74377800643DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACC72D562A74377800643DD8 /* Build configuration list for PBXNativeTarget "LoginCasePOP-MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC72D572A74377800643DD8 /* Debug */,
+				ACC72D582A74377800643DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACC72D592A74377800643DD8 /* Build configuration list for PBXNativeTarget "LoginCasePOP-MVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC72D5A2A74377800643DD8 /* Debug */,
+				ACC72D5B2A74377800643DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACC72D212A74377700643DD8 /* Project object */;
+}
